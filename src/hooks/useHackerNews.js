@@ -21,6 +21,10 @@ const useHackerNews = () => {
 	}
 
 	const getComments = async (id) => {
+		if (!id) {
+			return null;
+		}
+
 		const response = await request(`${urlBase}item/${id}.json`);
 		let result = null;
 
@@ -37,9 +41,7 @@ const useHackerNews = () => {
 		const result = {};
 
 		for (let item of response) {
-			// if (!item.deleted && !item.dead && item.by){
 			result[item.id] = item;
-			// }
 		}
 		return result
 	}

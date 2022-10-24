@@ -1,5 +1,5 @@
-import { useHackerNews } from "../../hooks/useHackerNews";
 import { useEffect, useState } from 'react';
+import { useHackerNews } from "../../hooks/useHackerNews";
 
 import { Button } from "../../components/Button/Button";
 import { Loader } from '../../components/Loader/Loader';
@@ -7,9 +7,9 @@ import { ErrorModal } from '../../components/ErrorModal/ErrorModal';
 import { NewsList } from '../../components/NewsList/NewsList';
 
 
-const News = ({ setActiveTopic }) => {
-	const [news, setNews] = useState(null);
+const News = () => {
 	const [needUpdate, setNeedUpdate] = useState(false);
+	const [news, setNews] = useState(null);
 	const {loading, error, getNews} = useHackerNews();
 
 	useEffect(() => {
@@ -29,7 +29,7 @@ const News = ({ setActiveTopic }) => {
 	const load = loading ? <Loader/> : null;
 	const err = error ? <ErrorModal/> : null;
 	const content = news
-						? <NewsList news={news} setActiveTopic={setActiveTopic}/>
+						? <NewsList news={news}/>
 						: null;
 
 	return (

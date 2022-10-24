@@ -8,7 +8,7 @@ import { List } from '../List/List';
 
 import styles from './NewsList.module.scss';
 
-const  NewsList = ({ news, setActiveTopic }) => {
+const  NewsList = ({ news }) => {
 	const { news__number, new__title } = styles;
 
 	const content = () => {
@@ -20,7 +20,6 @@ const  NewsList = ({ news, setActiveTopic }) => {
 							<p className={news__number}>{i + 1}.</p>
 							<Link to={`/${item.id}`}
 								className={new__title}
-								onClick={() => setActiveTopic(item)}
 								style={{textDecoration: "none", color: "black"}}
 							>
 								{item.title}

@@ -1,7 +1,6 @@
 import './App.css';
 import { Container } from '@mui/material';
 
-import { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { Header } from "./components/Header/Header";
@@ -12,8 +11,6 @@ import { ErrorBoundary } from './components/ErrorBoundary/ErrorBoundary';
 
 
 function App() {
-	const [activeTopic, setActiveTopic] = useState(null);
-
     return (
             <Container maxWidth='lg'>
 				<Router>
@@ -22,12 +19,12 @@ function App() {
 							<Switch>
 								<Route exact path="/">
 									<ErrorBoundary>
-										<News setActiveTopic={setActiveTopic}/>
+										<News/>
 									</ErrorBoundary>
 								</Route>
 								<Route path="/:id">
 									<ErrorBoundary>
-										<Topic topic={activeTopic} setActiveTopic={setActiveTopic}/>
+										<Topic/>
 									</ErrorBoundary>
 								</Route>
 							</Switch>
