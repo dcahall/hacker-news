@@ -1,0 +1,13 @@
+.row {
+	display: flex;
+	margin-bottom: 5px;
+
+	&__small {
+		p {
+			margin-right: 5px;
+		}
+		padding-left: 22px;
+		color: #828282;
+		font-size: 11px;
+	}
+}

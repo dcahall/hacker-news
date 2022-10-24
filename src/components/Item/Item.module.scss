@@ -1,0 +1,12 @@
+.item {
+	display: flex;
+	flex-direction: column;
+	padding: 5px 0;
+	
+	&__sub {
+		margin-top: 10px;
+		color: #444444;
+		font-size: 12px;
+	}
+}
+

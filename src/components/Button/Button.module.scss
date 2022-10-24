@@ -1,0 +1,13 @@
+.button {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	padding: 10px 10px;
+	background: #ff6600;
+	border: none;
+	border-radius: 2px;
+	&:hover {
+		filter: brightness(90%);
+		cursor: pointer
+	}
+}

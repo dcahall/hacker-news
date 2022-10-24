@@ -1,0 +1,13 @@
+.news__title {
+	color: black;
+	&:hover {
+		cursor: pointer;
+	}
+	a {
+		text-decoration: none !important;
+	}
+}
+
+.news__number {
+	padding-right: 10px;
+}

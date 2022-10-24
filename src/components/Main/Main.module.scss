@@ -1,0 +1,14 @@
+.main {
+	position: relative;
+	padding: 10px;
+	border-radius: 0 0 2px 2px;
+	background-color: rgb(246, 246, 239);
+	box-shadow: 1px 4px 6px black;
+	font-size: 14px;
+	min-height: 40px;
+	margin-bottom: 20px;
+	
+	&__comments {
+		box-shadow: none;
+	}
+}
