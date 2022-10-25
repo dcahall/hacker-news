@@ -29,7 +29,7 @@ const  NewsList = ({ news }) => {
 							<p>author: {item.by}</p>
 							<p>rating: {item.score}</p>
 							<p>{format(toDate(item.time * 1000), 'PPpp')}</p>
-							{item.kids && <p>comments: {item.descendants}</p>}
+							{!!item.descendants && <p>comments: {item.descendants}</p>}
 						</Row>
 					</Item>
 				);
