@@ -12,7 +12,7 @@ ____
 ``` sh
 git clone git@github.com:dcahall/avito-test.git && cd avito-test/
 ```
-2. Install all npm packages:
+2. Install all packages:
 ``` sh
 yarn install
 ```
