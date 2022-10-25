@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import {formatDistanceToNow, toDate} from "date-fns";
 
-import { Item } from '../Item/Item';
 import { Row } from '../Row/Row';
 import { SubComment } from '../SubComments/SubComment'
 
