@@ -70,7 +70,7 @@ const Topic = () => {
 				<Row>
 					<p className={author}>by {topic.by} </p>
 					<p className={date}>{format(toDate(topic.time * 1000), 'PPpp')} </p>
-					<p className={comment}> comments: {topic.kids ? topic.descendants : 0}</p>
+					<p className={comment}> comments: {topic.descendants ? topic.descendants : 0}</p>
 				</Row>
 				<Link className={back} to="/">back</Link>
 		 	</>
