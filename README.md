@@ -10,7 +10,7 @@ ____
 **Launching:**
 1. Clone this repo and go to it:
 ``` sh
-git clone git@github.com:dcahall/avito-test.git && cd avito-test/
+git clone git@github.com:dcahall/avito-test.git && cd hacker-news
 ```
 2. Install all packages:
 ``` sh
@@ -25,6 +25,3 @@ ____
 - ReactJS + hooks
 - React Router
 - CSS/SCSS
-___
-**PS:**
-Задание выполнено без использования Redux, так как не дошел еще до его изучения, но скоро это исправлю
