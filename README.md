@@ -1,4 +1,4 @@
-# avito-test
+# hacker-news
 A react application that displays current news, which takes from the API Hacker News
 
 
